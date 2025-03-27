@@ -31,3 +31,28 @@ https://leetcode.com/problems/reverse-integer/description/
         return sign * newX;
     }
 ```
+
+# [Easy] Palindrome Number
+https://leetcode.com/problems/palindrome-number/
+
+```C#
+    public bool IsPalindrome(int x)
+    {
+        var str = x.ToString();
+        var head = 0;
+        var end = str.Length - 1;
+
+        while (head < end)
+        {
+            if (str[head] != str[end])
+            {
+                return false;
+            }
+
+            head++;
+            end--;
+        }
+
+        return true;
+    }
+```
