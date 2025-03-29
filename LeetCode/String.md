@@ -79,3 +79,36 @@ public int MyAtoi(string s)
     return sign * num;
 }
 ```
+
+# [Medium] Integer to Roman
+https://leetcode.com/problems/integer-to-roman/description/
+
+```C#
+    public string IntToRoman(int num)
+    {
+        var str = new StringBuilder();
+        WriteStr(str, ref num, 1000, "M");
+        WriteStr(str, ref num, 900, "CM");
+        WriteStr(str, ref num, 500, "D");
+        WriteStr(str, ref num, 400, "CD");
+        WriteStr(str, ref num, 100, "C");
+        WriteStr(str, ref num, 90, "XC");
+        WriteStr(str, ref num, 50, "L");
+        WriteStr(str, ref num, 40, "XL");
+        WriteStr(str, ref num, 10, "X");
+        WriteStr(str, ref num, 9, "IX");
+        WriteStr(str, ref num, 5, "V");
+        WriteStr(str, ref num, 4, "IV");
+        WriteStr(str, ref num, 1, "I");
+        return str.ToString();
+    }
+
+    private void WriteStr(StringBuilder str, ref int num, int value, string token)
+    {
+        while (num >= value)
+        {
+            num -= value;
+            str.Append(token);
+        }
+    }
+```
