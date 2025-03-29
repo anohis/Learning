@@ -1,3 +1,10 @@
+# Dynamic Programming
+適用範圍
+- 最優子結構 (Optimal substructure): 如果可以從某個問題的子問題的最優解建構出一個最優解，則稱該問題具有最優子結構
+  - 遞迴 
+- 重疊子問題 (Overlapping Subproblems): 如果問題可以分解為多次重複使用的子問題，則稱該問題具有重疊子問題
+  - 記憶化 (Memoization)
+
 # [Medium] Longest Palindromic Substring
 https://leetcode.com/problems/longest-palindromic-substring/description/
 > [!NOTE]
