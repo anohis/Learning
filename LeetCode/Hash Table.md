@@ -2,24 +2,6 @@
 https://leetcode.com/problems/two-sum/description/  
 
 > [!NOTE]
-> 題目保證只有一個解且不會有相同數字，這表示每個元素匹配的數字絕對不一樣  
-> 因此可以使用 Dictionary 儲存訪問過的元素
-
-```C#
-    public int[] TwoSum(int[] nums, int target)
-    {
-        var dic = new Dictionary<int, int>();
-        
-        for(int i = 0; i < nums.Length; i++)
-        {
-            var remain = target - nums[i];
-            if(dic.TryGetValue(remain, out var index))
-            {
-                return new int[] { index, i };
-            }
-            dic[nums[i]] = i;
-        }
-
-        return new int[] { -1, -1 };
-    }
-```
+> 題目保證只有一個解，因此只到找到符合結果的組合就可以終止  
+> 此時可以使用 Dictionary 儲存訪問過的元素  
+> 但如果需要找到所有解就要使用 Two pointers 來加速搜尋
