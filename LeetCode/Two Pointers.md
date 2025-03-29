@@ -1,7 +1,7 @@
 # [Medium] 3Sum
 https://leetcode.com/problems/3sum/description/
 > [!Note]
-> 觀察到題目要求總和指定為0，因此可以將問題視為2Sum  
-> 但跟 [Two Sum](https://leetcode.com/problems/3sum/description/) 不同的是必須找到所有可能  
-> 如果使用相同方式勢必需要遍歷全部  
-> 所以可以排序後使用 Two Pointers 加速搜尋組合
+> 觀察到題目要求總和指定為 0，因此可以將問題視為 [2Sum](https://github.com/anohis/Learning/blob/main/LeetCode/Hash%20Table.md#two-sum)
+> 但此時 Two Pointers 比 Hash Table 好的原因是兩者複雜度都是 O(N^2)，排序產生的消耗影響變小  
+> 又 Two Pointers 可以提高搜尋效率，Hash Table 必須完整遍歷陣列  
+> 綜合來看 Two Pointers 會是更優的選擇
