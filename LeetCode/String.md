@@ -112,3 +112,72 @@ https://leetcode.com/problems/integer-to-roman/description/
         }
     }
 ```
+
+# [Easy] Roman to Integer
+https://leetcode.com/problems/roman-to-integer/description/
+
+```C#
+    public int RomanToInt(string s)
+    {
+        var dic = BuildDic();
+        var chars = s.ToCharArray();
+        var num = 0;
+        var temp = "";
+
+        for(int i=0;i<chars.Length-1;i++)
+        {
+            switch(chars[i]){
+                case 'I':
+                    if(chars[i+1] == 'V' || chars[i+1] == 'X')
+                    {
+                        num-=1;
+                    }
+                    else
+                    {
+                        num += dic[chars[i]];
+                    }
+                    break;
+                case 'X':
+                    if(chars[i+1] == 'L' || chars[i+1] == 'C')
+                    {
+                        num-=10;
+                    }
+                    else
+                    {
+                        num += dic[chars[i]];
+                    }
+                    break;    
+                case 'C':
+                    if(chars[i+1] == 'D' || chars[i+1] == 'M')
+                    {
+                        num-=100;
+                    }
+                    else
+                    {
+                        num += dic[chars[i]];
+                    }
+                    break;    
+                default: 
+                    num += dic[chars[i]];
+                    break;
+            }
+        }
+
+        num += dic[chars[chars.Length-1]];
+
+        return num;
+    }
+
+    private Dictionary<char, int> BuildDic()
+    {
+        return new Dictionary<char, int>{
+            {'I', 1},
+            {'V', 5},
+            {'X', 10},
+            {'L', 50},
+            {'C', 100},
+            {'D', 500},
+            {'M', 1000},
+        };
+    }
+```
