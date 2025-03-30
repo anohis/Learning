@@ -1,3 +1,9 @@
+# [Medium] Container With Most Water
+https://leetcode.com/problems/container-with-most-water/description/
+> [!NOTE]
+> 暴力解會需要 $O(n^2)$，因此需要快速剃除不可能的組合  
+> 可以觀察到容量計算取受限於最矮的那邊，因此如果下一個組合最矮的一邊不變，整體容量不可能變得更多  
+
 # [Medium] 3Sum
 https://leetcode.com/problems/3sum/description/
 > [!Note]
