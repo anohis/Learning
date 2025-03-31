@@ -6,6 +6,7 @@ Welcome to my learning notes repository! This repository serves as a collection 
   - Probability
   - Linear algebra
   - Discrete Mathematics
+  - Calculus
 - Machine Learning
 - Programming
   - Object Oriented Programming
