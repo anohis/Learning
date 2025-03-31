@@ -7,9 +7,17 @@ Welcome to my learning notes repository! This repository serves as a collection 
   - Linear algebra
   - Discrete Mathematics
 - Machine Learning
+- Programming
+  - Object Oriented Programming
+  - Functional Programming
+  - Asynchronous Programming
+  - Concurrency and Parallelism
 - Software Architecture
   - Domain-driven design
   - Clean architecture
+- Compiler Theory
+- Distributed Systems
+- Introduction to Computer Science
 - Algorithm
   - Leetcode
 - Renderring
