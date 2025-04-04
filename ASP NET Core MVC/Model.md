@@ -61,4 +61,6 @@ POCO 有以下好處
 - 常用於 ORM，POCO 可以當作資料模型，與資料庫物件對應，但不會依賴 EF Core 的特定類別
 
 # Scaffold
+Scaffold（樣板生成） 是 Visual Studio 和 .NET CLI（Command Line Interface）提供的一個自動化工具，可以根據現有的資料模型（Model）自動產生控制器（Controller）、視圖（View）和資料存取邏輯（Data Access Code）  
+這讓開發者能快速建立 CRUD（Create、Read、Update、Delete）功能，而不需要手寫大量重複的程式碼  
 
