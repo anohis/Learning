@@ -64,3 +64,19 @@ POCO 有以下好處
 Scaffold（樣板生成） 是 Visual Studio 和 .NET CLI（Command Line Interface）提供的一個自動化工具，可以根據現有的資料模型（Model）自動產生控制器（Controller）、視圖（View）和資料存取邏輯（Data Access Code）  
 這讓開發者能快速建立 CRUD（Create、Read、Update、Delete）功能，而不需要手寫大量重複的程式碼  
 
+Scaffolding 會新增下列套件
+- Microsoft.EntityFrameworkCore.SqlServer
+- Microsoft.EntityFrameworkCore.Tools
+- Microsoft.VisualStudio.Web.CodeGeneration.Design
+  
+Scaffolding 會建立下列項目
+- Controller：Controllers/xxxController.cs
+- Razor View : Views/Create.cshtml、Delete.cshtml、Details.cshtml、Edit.cshtml、Index.cshtml
+- DbContext：Data/xxxContext.cs
+  
+Scaffolding 會更新下列項目
+- 在 csproj 專案檔中插入必要的套件參考
+- 在 Program.cs 檔案中註冊資料庫內容
+- 將資料庫連接字串新增至 appsettings.json 檔案
+
+自動建立這些檔案和檔案更新的流程稱為 Scaffolding
