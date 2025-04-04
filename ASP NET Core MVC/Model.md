@@ -1,6 +1,6 @@
-
-搭配 Entity Framework Core (EF Core) 使用這些模型類別，即可使用資料庫  
-EF Core 是一種物件關聯式對應 (ORM) 架構，可簡化資料存取程式碼
+# Entity Framework (EF) Core
+EF Core 是一種物件關聯式對應 (Object-Relational Mapping, ORM) 架構  
+允許使用 C# 類別（Entity）來表示資料表，而不需要直接寫 SQL 查詢
 
 # POCO (Plain Old CLR Objects)
 指的是沒有繼承特定框架或類別庫的純 C# 類別  
@@ -50,3 +50,4 @@ public class Person
 POCO 有以下好處
 - 不依賴任何框架，因此輕量且容易測試
 - 因為輕量，可以簡化序列化和跨層傳遞資料
+- 常用於 ORM，POCO 可以當作資料模型，與資料庫物件對應，但不會依賴 EF Core 的特定類別
