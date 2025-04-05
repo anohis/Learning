@@ -80,3 +80,21 @@ Scaffolding 會更新下列項目
 - 將資料庫連接字串新增至 appsettings.json 檔案
 
 自動建立這些檔案和檔案更新的流程稱為 Scaffolding
+
+# Program.cs
+在 Program.cs 中會需要註冊 DbContext，如
+```C#
+var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<MvcMovieContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("MvcMovieContext")));
+```
+之後會注入到 MoviesController.cs
+```C#
+private readonly MvcMovicContext _context;
+
+public MoviesController(MvcMovicContext context)
+{
+    _context = context;
+}
+```
