@@ -82,9 +82,7 @@ Scaffolding 會更新下列項目
 自動建立這些檔案和檔案更新的流程稱為 Scaffolding
 
 # DbContext 
-DbContext 會處理連線到資料庫和將 POCO 物件對應至資料庫記錄的工作
-
-# Program.cs
+DbContext 會處理連線到資料庫和將 POCO 物件對應至資料庫記錄的工作  
 在 Program.cs 中會需要註冊 DbContext，如
 ```C#
 var builder = WebApplication.CreateBuilder(args);
