@@ -183,5 +183,5 @@ public async Task<IActionResult> Details(int? id)
 ```
 
 > [!NOTE]
-> 一個 view (.cshtml) 只能同時定義一個 @model
+> 一個 view (.cshtml) 只能同時定義一個 @model  
 > 否則會跳錯誤 `RZ2001 The 'model' directive may only occur once per document.`
