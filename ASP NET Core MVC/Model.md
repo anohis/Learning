@@ -98,3 +98,41 @@ public MoviesController(MvcMovicContext context)
     _context = context;
 }
 ```
+# @model
+在 ASP.NET Core MVC 的 Razor View（.cshtml 檔）中，@model 是用來指定這個 View 頁面使用哪一種資料模型的語法  
+@model 物件為強型別物件
+
+例如在 Models/Movie.cs 可以定義
+```C#
+public class Movie
+{
+    public int Id { get; set; }
+    public string? Title { get; set; }
+    [DataType(DataType.Date)]
+    public DateTime ReleaseDate { get; set; }
+    public string? Genre { get; set; }
+    public decimal Price { get; set; }
+}
+```
+
+在 Controllers/MoviesController.cs 中使用
+```C#
+// GET: Movies/Details/5
+public async Task<IActionResult> Details(int? id)
+{
+    if (id == null)
+    {
+        return NotFound();
+    }
+
+    var movie = await _context.Movie
+        .FirstOrDefaultAsync(m => m.Id == id);
+    if (movie == null)
+    {
+        return NotFound();
+    }
+
+    return View(movie);
+}
+```
+
