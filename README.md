@@ -13,6 +13,7 @@ Welcome to my learning notes repository! This repository serves as a collection 
   - Functional Programming
   - Asynchronous Programming
   - Concurrency and Parallelism
+- Unity DOTS
 - Software Architecture
   - Domain-driven design
   - Clean architecture
