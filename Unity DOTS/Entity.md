@@ -1,3 +1,9 @@
+# Create
+```C#
+var entity = state.EntityManager.CreateEntity();
+state.EntityManager.AddComponentData(entity, directoryManaged);
+```
+
 # Instantiate
 ```
 public void OnUpdate(ref SystemState state)
