@@ -18,7 +18,7 @@ DefaultWorldInitialization.AddSystemsToRootLevelSystemGroups(world, systems);
 ScriptBehaviourUpdateOrder.AppendWorldToCurrentPlayerLoop(world);
 ```
 
-```
+```c#
 var world = DefaultWorldInitialization.Initialize("Custom World");
 ```
 
