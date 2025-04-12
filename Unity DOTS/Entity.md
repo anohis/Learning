@@ -1,4 +1,17 @@
+# Instantiate
+```
+public void OnUpdate(ref SystemState state)
+{
+    Entity prefab = SystemAPI.GetSingleton<Spawner>().Prefab;
+    var instances = state.EntityManager.Instantiate(prefab, 500, Allocator.Temp);
+}
+```
+
 # Destroy
+```C#
+state.EntityManager.DestroyEntity();
+```
+
 從 EntityCommandBufferSystem 創建 CommandBuffer，呼叫 DestroyEntity 摧毀 Entity
 ```C#
 public void OnUpdate(ref SystemState state)
