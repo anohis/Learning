@@ -18,4 +18,8 @@ DefaultWorldInitialization.AddSystemsToRootLevelSystemGroups(world, systems);
 ScriptBehaviourUpdateOrder.AppendWorldToCurrentPlayerLoop(world);
 ```
 
+```
+var world = DefaultWorldInitialization.Initialize("Custom World");
+```
+
 
