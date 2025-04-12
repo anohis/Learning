@@ -10,16 +10,60 @@ world 內還有一組 system，system 只能存取相同 world 內的 entity
 - #UNITY_DISABLE_AUTOMATIC_SYSTEM_BOOTSTRAP
 
 ### Manual World Creation
+```c#
+var world = DefaultWorldInitialization.Initialize("Custom World");
+```
+DefaultWorldInitialization.Initialize 會完整的創建一個預設世界，大致包含  
+- InitializationSystemGroup
+  - BeginInitializationEntityCommandBufferSystem
+  - CopyInitialTransformFromGameObjectSystem
+  - SubSceneLiveLinkSystem
+  - SubSceneStreamingSystem
+  - EndInitializationEntityCommandBufferSystem
+- SimulationSystemGroup
+  - BeginSimulationEntityCommandBufferSystem
+  - TransformSystemGroup
+    - EndFrameParentSystem
+    - CopyTransformFromGameObjectSystem
+    - EndFrameTRSToLocalToWorldSystem
+    - EndFrameTRSToLocalToParentSystem
+    - EndFrameLocalToParentSystem
+    - CopyTransformToGameObjectSystem
+  - LateSimulationSystemGroup
+  - EndSimulationEntityCommandBufferSystem
+- PresentationSystemGroup
+  - BeginPresentationEntityCommandBufferSystem
+  - CreateMissingRenderBoundsFromMeshRenderer
+  - RenderingSystemBootstrap
+  - RenderBoundsUpdateSystem
+  - RenderMeshSystem
+  - LODGroupSystemV1
+  - LodRequirementsUpdateSystem
+  - EndPresentationEntityCommandBufferSystem
+
 ```C#
 var world = new World("Custom World");
 var systems = new [] { typeof(FooSystem), typeof(BarSystem) };
 DefaultWorldInitialization.AddSystemsToRootLevelSystemGroups(world, systems);
-
 ScriptBehaviourUpdateOrder.AppendWorldToCurrentPlayerLoop(world);
 ```
+可以自己創建 World，並使用 DefaultWorldInitialization.AddSystemsToRootLevelSystemGroups，此時會包含
+- InitializationSystemGroup
+- SimulationSystemGroup
+  - FooSystem
+  - BarSystem
+- PresentationSystemGroup
 
-```c#
-var world = DefaultWorldInitialization.Initialize("Custom World");
+```C#
+var world = new World("DotsFisher");
+var simulationSystemGroup = world.GetOrCreateSystemManaged<SimulationSystemGroup>();
+var system = world.CreateSystemManaged<TestSystem2>();
+simulationSystemGroup.AddSystemToUpdateList(system);
+ScriptBehaviourUpdateOrder.AppendWorldToCurrentPlayerLoop(world);
 ```
+想更加控制創建過程，可以使用 CreateSystemManaged 創建 System  
+由於 AppendWorldToCurrentPlayerLoop 綁定 SimulationSystemGroup，因此必須要創建 SimulationSystemGroup 並且把 system 加到 simulationSystemGroup 之中
+
+
 
 
