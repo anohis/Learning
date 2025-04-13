@@ -118,3 +118,17 @@ struct RotationJob : IJobChunk
     }
 }
 ```
+
+# IJobFor
+表示一個具有固定迭代次數的 job，可以使用三種方式執行
+- IJobForExtensions.Run : 在主執行緒上執行
+- IJobForExtensions.Schedule : 在任一執行緒上執行
+
+> [!NOTE]
+> Run、Schedule 均保證 job 迭代會在同執行緒上依序完成
+
+- IJobForExtensions.ScheduleParallel : 迭代會在不同執行緒執行，並且不保證執行順序
+  - ScheduleParallel 會需要額外設定 batch size，同一個 batch 會在同執行緒上執行
+
+# IJobParallelFor
+IJobParallelFor 會將 IJobFor 依據迭代次數拆成數個 job 實現平行運算
