@@ -29,23 +29,23 @@
 ## 消費者剩餘 (consumer surplus)
 表示總使用價值 (或總願付價格) - 總消費支出 (或完全價格)，即消費者獲得的利益。  
 要注意的是總使用價值應該要每單位累加上去，如下圖，礦泉水的總使用價值是每單位的邊際價值累加。而總消費支出則是價格乘上數量。
-![image](https://github.com/user-attachments/assets/fd61338c-b21c-4769-b45a-acd75c0f445a)
+![image](https://github.com/user-attachments/assets/fd61338c-b21c-4769-b45a-acd75c0f445a)  
 上圖也可以簡化成
-![image](https://github.com/user-attachments/assets/55ec270b-c85d-494e-bed5-2e462994d583)
+![image](https://github.com/user-attachments/assets/55ec270b-c85d-494e-bed5-2e462994d583)  
 
 ## 其他因素
 需求法則假設除了價格外的其他條件不變，例如所得、喜好、替代品等等。
 
 ### 所得 (income)
-![image](https://github.com/user-attachments/assets/3728fa70-15c2-4f77-9c3b-ad330b66cd72)
-圖 A 表示價格下降時，需求量增加 (increase in quantity demanded)。
+![image](https://github.com/user-attachments/assets/3728fa70-15c2-4f77-9c3b-ad330b66cd72)  
+圖 A 表示價格下降時，需求量增加 (increase in quantity demanded)。  
 圖 B 表示所得上升時，需求增加 (increase in demand)。
 
 ### 正常財 (normal goods)、劣等財 (inferior goods)
 在價格不變的情況下，當所得上升時，正常財的需求量會增加，例如奢侈品。反之，劣等財的需求量會減少，例如友善食光。
 
 ### 替代品 (substitutes)、互補品 (complements)
-若 A、B 屬於替代品，則 A 價格上升時，B 的需求量會增加，例如生鮮蔬菜、冷凍蔬菜。
+若 A、B 屬於替代品，則 A 價格上升時，B 的需求量會增加，例如生鮮蔬菜、冷凍蔬菜。  
 若 A、B 屬於互補品，則 A 價格上升時，B 的需求量會減少，例如機車、汽油。
 
 ## 預期使用價值 (expected use value)
