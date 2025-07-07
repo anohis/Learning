@@ -75,7 +75,22 @@ $$
 不同消費組合可以獲得相同滿足程度，將這些組合連成線就可以獲得無異曲線 (indifference curve)。
 
 #### 無異曲線
-線上的任一點都能帶來相同的滿足程度，或稱效用 (utility)。  
+線上的任一點都能帶來相同的滿足程度，或稱相同的效用 (utility)。  
 ![image](https://github.com/user-attachments/assets/0f0ab4de-40df-45a6-a61d-20f8412a9854)  
 圖中，a、b、c 的消費組合都能獲得 $I_1$ 的效用。且效用 $I_3 > I_2 > I_1$。
 
+無異曲線有以下特性
+- 不同人有不同偏好，因此會有不同的無異曲線
+- 不同的無異曲線不會相交
+  - 相同組合不會有多種效用
+- 因為商品的邊際效用 (marginal utility) 為正，因此無異曲線為負斜率
+  - 邊際效用: 每多得到一單位商品時，帶來的額外滿足感或效用
+- 無異曲線切線表示邊際替代率 (marginal rate of substitution, MRS)
+  - 邊際替代率: 為了得到一單位 A，願意放棄多少單位的 B，而讓滿意度不變
+- 因為邊際替代率遞減，因此無異曲線凸向原點
+  - 你越是擁有某一種商品，你就越不想再多要它，反而更想要另外一種東西
+![image](https://github.com/user-attachments/assets/a6fc3b93-28e2-49a1-888e-7ecef749493b)
+
+### 解釋
+![image](https://github.com/user-attachments/assets/d0c47249-447a-43af-8e54-c7a54134b3f1)
+在預算限制下，消費者會選擇高的組合，也就是 e 點。此時邊際替代率與預算限制線的斜率相等。
