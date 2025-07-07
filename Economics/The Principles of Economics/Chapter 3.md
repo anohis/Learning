@@ -92,5 +92,5 @@ $$
 ![image](https://github.com/user-attachments/assets/a6fc3b93-28e2-49a1-888e-7ecef749493b)
 
 ### 解釋
-![image](https://github.com/user-attachments/assets/d0c47249-447a-43af-8e54-c7a54134b3f1)
+![image](https://github.com/user-attachments/assets/d0c47249-447a-43af-8e54-c7a54134b3f1)  
 在預算限制下，消費者會選擇高的組合，也就是 e 點。此時邊際替代率與預算限制線的斜率相等。
