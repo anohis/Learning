@@ -91,6 +91,17 @@ $$
   - 你越是擁有某一種商品，你就越不想再多要它，反而更想要另外一種東西
 ![image](https://github.com/user-attachments/assets/a6fc3b93-28e2-49a1-888e-7ecef749493b)
 
-### 解釋
+## 無異曲線分析
 ![image](https://github.com/user-attachments/assets/d0c47249-447a-43af-8e54-c7a54134b3f1)  
 在預算限制下，消費者會選擇高的組合，也就是 e 點。此時邊際替代率與預算限制線的斜率相等。
+
+![image](https://github.com/user-attachments/assets/453f4c55-a68e-4525-a1e4-b5ace35f764b)  
+當牛肉價格下降時
+- 需求法則 (A圖) 表示牛肉購買量會增加
+- 無異曲線分析 (B圖) 表示預算線變更，消費組合從 e 變成 f
+
+![image](https://github.com/user-attachments/assets/65460869-a68f-494f-a446-3ba4afb3b055)
+- 消費組合從 e 變成 f 是由替代效果與所得效果推動
+  - e -> g: 替代效果 (substitution effect)，消費者的實質所得 (real income) 不變的情況下，因 A 價格下降導致消費者更願意用 A 替代 B
+  - g -> f: 所得效果 (income effect)，價格下降表示消費者的實質所得提升，導致效用提升
+
